@@ -1,0 +1,122 @@
+.container-right-information {
+  height: 100%;
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.container-right__span {
+  display: grid;
+  height: 100%;
+  width: 75%;
+  place-content: center;
+  color: white;
+}
+
+.container-right__span span {
+  font-size: 80px;
+  text-align: center;
+}
+
+.information-background {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px 20px 30px 30px;
+  color: white;
+  background-position-x: right;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: 35%;
+}
+
+.information-background:nth-child(1) {
+  background-color: hsl(15, 100%, 70%);
+  background-image: url("./images/icon-work.svg");
+}
+.information-background:nth-child(2) {
+  background-color: hsl(195, 74%, 62%);
+  background-image: url("./images/icon-play.svg");
+}
+.information-background:nth-child(3) {
+  background-color: hsl(348, 100%, 68%);
+  background-image: url("./images/icon-study.svg");
+}
+.information-background:nth-child(4) {
+  background-color: hsl(145, 58%, 55%);
+  background-image: url("./images/icon-exercise.svg");
+}
+.information-background:nth-child(5) {
+  background-color: hsl(264, 64%, 52%);
+  background-image: url("./images/icon-social.svg");
+}
+.information-background:nth-child(6) {
+  background-color: hsl(43, 84%, 65%);
+  background-image: url("./images/icon-self-care.svg");
+}
+
+.information-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  height: 75%;
+  top: 25%;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 20px;
+  padding: 20px;
+}
+.information-data:hover {
+  background-color: hsl(235, 45%, 61%);
+  cursor: pointer;
+}
+
+.information-data article {
+  display: flex;
+  justify-content: space-between;
+}
+
+.information-data .information-data-botton {
+  display: inline;
+}
+.information-data article img {
+  object-fit: contain;
+}
+
+.information-data span {
+  font-weight: 300;
+  font-size: 58px;
+}
+
+@media (max-width: 1101px) {
+  .container-right-information {
+    height: auto;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto, 1fr);
+    gap: 10px;
+  }
+
+  .information-data span {
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+  .information-background {
+    background-size: 15%;
+  }
+
+  .container-right-information .information-data-botton {
+    display: flex;
+    padding-bottom: 20px;
+  }
+
+  .container-right__span {
+    width: 100%;
+  }
+
+  .container-right__span span {
+    font-size: 40px;
+  }
+}
