@@ -7,19 +7,6 @@
   gap: 20px;
 }
 
-.container-right__span {
-  display: grid;
-  height: 100%;
-  width: 75%;
-  place-content: center;
-  color: white;
-}
-
-.container-right__span span {
-  font-size: 80px;
-  text-align: center;
-}
-
 .information-background {
   height: 100%;
   width: 100%;
@@ -32,27 +19,21 @@
 }
 
 .information-background:nth-child(1) {
-  background-color: hsl(15, 100%, 70%);
   background-image: url("./images/icon-work.svg");
 }
 .information-background:nth-child(2) {
-  background-color: hsl(195, 74%, 62%);
   background-image: url("./images/icon-play.svg");
 }
 .information-background:nth-child(3) {
-  background-color: hsl(348, 100%, 68%);
   background-image: url("./images/icon-study.svg");
 }
 .information-background:nth-child(4) {
-  background-color: hsl(145, 58%, 55%);
   background-image: url("./images/icon-exercise.svg");
 }
 .information-background:nth-child(5) {
-  background-color: hsl(264, 64%, 52%);
   background-image: url("./images/icon-social.svg");
 }
 .information-background:nth-child(6) {
-  background-color: hsl(43, 84%, 65%);
   background-image: url("./images/icon-self-care.svg");
 }
 

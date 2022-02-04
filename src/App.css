@@ -6,3 +6,26 @@ main {
   background-color: hsl(226, 43%, 10%);
   overflow: scroll;
 }
+
+.main-container {
+  height: 80vh;
+  width: 80vw;
+  display: flex;
+  gap: 20px;
+}
+
+/* MAIN CONTAINER LEFT*/
+
+.main-container-left {
+  width: 25%;
+  color: white;
+}
+
+.container-right-information {
+  height: 100%;
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
